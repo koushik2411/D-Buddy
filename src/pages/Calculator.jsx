@@ -25,21 +25,21 @@ function Calculator() {
 
     // Result
     const solve = () => {
-        let result = (eval(display)).toFixed(3);
+        let result = eval(display);
 
         setDisplay(String(result));
     }
 
   return (
-    <div className='  p-3 pt-15 flex items-start justify-center'>
+    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-slate-200'>
 
-        <div className=' border p-3 w-full max-w-100 flex flex-col items-center gap-5 rounded-xl bg-slate-300'>
+        <div className=' p-3 w-[96%] max-w-90 flex flex-col items-center gap-5 rounded-xl bg-linear-to-b from-slate-400/70 to-slate-400 shadow-xl'>
 
-            <h1 className=' text-2xl font-semibold border-b-2'>CALCULATOR</h1>
+            <h1 className=' my-1 text-2xl font-semibold border-b-2'>CALCULATOR</h1>
 
             <div className=' w-full flex flex-col items-center gap-5'>
 
-                <div className=' w-[96%] py-4 px-2.5 text-4xl font-semibold text-end rounded overflow-x-auto bg-slate-100'>{display || "0"}</div>
+                <div className=' w-[96%] py-4 px-2.5 text-4xl font-semibold text-end rounded-lg overflow-x-auto bg-slate-100'>{display || "0"}</div>
 
                 <div className=' w-full'>
 
