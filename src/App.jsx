@@ -15,7 +15,7 @@ import SavingsCalculator from './utility/SavingsCalculator'
 
 function App() {
   return (
-    <div className=' min-h-screen'>
+    <div className=' min-h-screen bg-slate-50'>
       <Header/>
 
       <Routes>

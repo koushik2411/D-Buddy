@@ -12,11 +12,11 @@ function Tables() {
     }
 
   return (
-    <div className=' p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-800 to-cyan-950'>
+    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-700 to-cyan-900'>
 
-        <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300'>
+        <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300 shadow-xl'>
 
-            <h1 className=' text-2xl font-semibold border-b-2'>TABLE GENERATOR</h1>
+            <h1 className=' text-2xl font-bold border-b-2 text-slate-600'>TABLE GENERATOR</h1>
 
             <div className=' flex flex-col items-center gap-5'>
 
@@ -25,10 +25,10 @@ function Tables() {
                     value={num}
                     placeholder='Enter a number (e.g. 2)'
                     onChange={handleChange}
-                    className='numInput w-full py-2 px-4 text-xl font-bold text-orange-600 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 focus:outline-none'
+                    className='numInput w-full py-2 px-4 text-xl font-bold text-orange-600 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 shadow-md focus:outline-none placeholder:text-slate-500 placeholder:font-semibold'
                 />
 
-                <div className=' w-full mb-3 p-5 space-y-2 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200'>
+                <div className=' w-full mb-3 p-5 space-y-3 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 shadow-md'>
                     {num > 0 ? (
                         multiplier.map((m) => (
                             <p key={m} className=' text-xl font-bold border-b border-cyan-300'>
@@ -36,7 +36,7 @@ function Tables() {
                             </p>
                         ))
                     ) : (
-                        <p>
+                        <p className=' animate-pulse text-red-600'>
                 Enter a number to generate it's table.
             </p>
                     ) }
