@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*-----------------------------------------------------------------*/
+/* COUNTER */
+.counterBtns {
+    height: 55px;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--color-gray-500), var(--color-gray-700));
+    color: var(--color-slate-100);
+}
+.counterBtns:active {
+    scale: 0.96;
+    background: linear-gradient(135deg, var(--color-gray-700), var(--color-gray-500));
+}
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/* NUMBER INPUT */
+.numInput::-webkit-outer-spin-button,
+.numInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/* CALCULATOR */
+.btnDivs {
+    padding: 8px 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calcBtns {
+    height: 55px;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--color-gray-500), var(--color-gray-700));
+    color: var(--color-slate-100);
+}
+.calcBtns:active {
+    scale: 0.96;
+    background: linear-gradient(135deg, var(--color-gray-700), var(--color-gray-500));
+}
+
+#equalBtn {
+    background: linear-gradient(135deg, var(--color-amber-400), var(--color-amber-500));
+}
+#equalBtn:active {
+    background: linear-gradient(135deg, var(--color-amber-500), var(--color-amber-400));
+}
+
+/*-----------------------------------------------------------------*/
