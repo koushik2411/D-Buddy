@@ -12,9 +12,9 @@ function Tables() {
     }
 
   return (
-    <div className=' p-3 pt-15 flex items-start justify-center'>
+    <div className=' p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-800 to-cyan-950'>
 
-        <div className=' border p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-xl'>
+        <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300'>
 
             <h1 className=' text-2xl font-semibold border-b-2'>TABLE GENERATOR</h1>
 
@@ -25,14 +25,14 @@ function Tables() {
                     value={num}
                     placeholder='Enter a number (e.g. 2)'
                     onChange={handleChange}
-                    className='numInput border w-full py-2 px-4 text-xl font-semibold rounded focus:outline-none'
+                    className='numInput w-full py-2 px-4 text-xl font-bold text-orange-600 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 focus:outline-none'
                 />
 
-                <div className=' border w-full p-5 space-y-2 rounded'>
+                <div className=' w-full mb-3 p-5 space-y-2 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200'>
                     {num > 0 ? (
                         multiplier.map((m) => (
-                            <p key={m} className=' text-xl'>
-                                {num} x {m} = <span className=' font-semibold'>{num*m}</span>
+                            <p key={m} className=' text-xl font-bold border-b border-cyan-300'>
+                                <span className=' text-orange-600'>{num}</span> <span className=' text-slate-600'>x</span> <span className=' text-blue-500'>{m}</span> = <span className=' text-orange-500'>{num*m}</span>
                             </p>
                         ))
                     ) : (
