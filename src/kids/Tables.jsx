@@ -12,7 +12,7 @@ function Tables() {
     }
 
   return (
-    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-700 to-cyan-900'>
+    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-800 to-cyan-900'>
 
         <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300 shadow-xl'>
 
