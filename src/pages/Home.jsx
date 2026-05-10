@@ -52,8 +52,8 @@ function Home() {
         ))}
       </div>
 
-      <p className=" p-10 text-xs animate-pulse">
-        This is a demo version. A lot more features will be joining soon with
+      <p className=" p-10 text-xs text-red-600 animate-pulse">
+        This is a demo version and still under development. A lot more features will be joining soon with
         the complete version. Stay tuned!
       </p>
     </div>
