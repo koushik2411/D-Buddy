@@ -12,11 +12,11 @@ function Tables() {
     }
 
   return (
-    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-linear-to-b from-cyan-800 to-cyan-900'>
+    <div className=' min-h-screen p-3 pt-15 flex items-start justify-center bg-cyan-800 dark:bg-black/40 dark:text-slate-100'>
 
-        <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300 shadow-xl'>
+        <div className=' p-5 w-full max-w-100 flex flex-col items-center gap-5 rounded-2xl bg-linear-to-b from bg-cyan-200 to-cyan-300 shadow-xl dark:bg-linear-to-b dark:from-gray-700 dark:to-gray-800'>
 
-            <h1 className=' text-2xl font-bold border-b-2 text-slate-600'>TABLE GENERATOR</h1>
+            <h1 className=' text-2xl font-bold border-b-2 text-slate-600 dark:text-slate-200'>TABLE GENERATOR</h1>
 
             <div className=' flex flex-col items-center gap-5'>
 
@@ -28,10 +28,10 @@ function Tables() {
                     className='numInput w-full py-2 px-4 text-xl font-bold text-orange-600 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 shadow-md focus:outline-none placeholder:text-slate-500 placeholder:font-semibold'
                 />
 
-                <div className=' w-full mb-3 p-5 space-y-3 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 shadow-md'>
+                <div className=' w-full mb-3 p-5 space-y-3 rounded-xl bg-linear-to-b from-cyan-50 to-slate-200 dark:bg-linear-to-b dark:from-slate-200 dark:to-slate-300 shadow-md'>
                     {num > 0 ? (
                         multiplier.map((m) => (
-                            <p key={m} className=' text-xl font-bold border-b border-cyan-300'>
+                            <p key={m} className=' text-xl font-bold border-b border-cyan-300 dark:border-slate-600'>
                                 <span className=' text-orange-600'>{num}</span> <span className=' text-slate-600'>x</span> <span className=' text-blue-500'>{m}</span> = <span className=' text-orange-500'>{num*m}</span>
                             </p>
                         ))

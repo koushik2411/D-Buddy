@@ -42,14 +42,12 @@ function SavingsCalculator() {
 
   return (
     <div 
-      className=' w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat'
-    //   style={{backgroundImage: "url(https://res.cloudinary.com/dcfjexbss/image/upload/v1756029923/heating-costs-4164538_w6inqy.jpg)"}}
+      className=' w-full min-h-screen p-3 pt-18 flex justify-center items-start bg-slate-200 dark:bg-black/40'
     >
 
-        <div className=' p-3 min-h-screen w-full flex items-center justify-center backdrop-blur-xs'>
-            <div className=' w-full max-w-150 p-3 flex flex-col gap-4 rounded-lg bg-slate-200/65 backdrop-blur-2xs shadow-xl'>
+        <div className=' w-full max-w-150 p-3 flex flex-col gap-4 rounded-2xl bg-slate-200/65 dark:bg-slate-700/70 shadow-xl'>
 
-           <div className=' px-2 py-3 flex flex-col items-center gap-2 bg-linear-to-b from-slate-600 to-slate-800 rounded-t-lg text-center text-slate-200'>
+           <div className=' px-2 py-4 flex flex-col items-center gap-2 bg-linear-to-b from-slate-600 to-slate-800 rounded-t-lg text-center text-slate-200'>
 
                 <h1 className=' text-2xl font-semibold pb-1 border-b'>
                     SAVINGS CALCULATOR
@@ -60,16 +58,16 @@ function SavingsCalculator() {
                 </p>
            </div>
 
-            <div className=' px-2 py-3 md:p-3 flex gap-1 rounded-lg bg-slate-200/50'>
+            <div className=' px-2 py-3 md:p-3 flex gap-1 rounded-lg bg-slate-200 dark:bg-black/40'>
 
-               <div className=' w-full p-2 flex flex-col gap-3 items-center rounded-lg bg-slate-400/40'>
+               <div className=' w-full p-2 flex flex-col gap-3 items-center rounded-lg bg-slate-400/40 dark:bg-slate-800'>
 
                     <input
                         type='number'
                         placeholder='Savings Goal'
                         value={goal}
                         onChange={(e)=> setGoal(e.target.value)}
-                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs'
+                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs dark:placeholder:text-slate-900'
                     />
 
                     <input
@@ -77,7 +75,7 @@ function SavingsCalculator() {
                         placeholder='Current Savings'
                         value={current}
                         onChange={(e)=> setCurrent(e.target.value)}
-                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs'
+                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs dark:placeholder:text-slate-900'
                     />
 
                     <input
@@ -85,10 +83,10 @@ function SavingsCalculator() {
                         placeholder='Monthly Contribution'
                         value={contribution}
                         onChange={(e)=> setContribution(e.target.value)}
-                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs'
+                        className='numInput w-full text-sm py-1 px-2 bg-slate-200/70 rounded outline-none placeholder:text-xs dark:placeholder:text-slate-900'
                     />
 
-                    <button onClick={calculate} className=' w-full py-1 px-2 rounded bg-linear-to-b from-slate-500 to-slate-700 text-slate-200 active:scale-[0.98]'>
+                    <button onClick={calculate} className=' w-full py-1 px-2 rounded-lg bg-linear-to-b from-slate-500 to-slate-700 text-slate-200 active:scale-[0.98]'>
                         Calculate
                     </button>
                </div>
@@ -107,7 +105,6 @@ function SavingsCalculator() {
                     </p>
                 </div>
             </div>
-        </div>
         </div>
     </div>
   )

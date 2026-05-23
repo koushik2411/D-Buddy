@@ -14,8 +14,9 @@ import SpiritualHome from './pages/SpiritualHome'
 import SavingsCalculator from './utility/SavingsCalculator'
 
 function App() {
+  
   return (
-    <div className=' min-h-screen bg-slate-50'>
+    <div className=' min-h-screen dark:bg-slate-800 dark:text-slate-100'>
       <Header/>
 
       <Routes>

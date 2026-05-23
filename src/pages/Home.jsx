@@ -40,9 +40,9 @@ function Home() {
   }
 
   return (
-    <div className=" min-h-screen w-full flex flex-col gap-6 lg:gap-9 items-center justify-center">
-      <p className=" pt-5 p-1 lg:pt-0 text-slate-800 font-semibold text-xl lg:text-2xl">
-        <span className="">Hello</span>, Welcome to{" "}
+    <div className=" min-h-screen w-full flex flex-col gap-6 lg:gap-9 items-center justify-center border-slate-100 text-slate-900 bg-slate-200 dark:bg-black/40 dark:text-slate-100">
+      <p className=" pt-5 p-1 lg:pt-0 text-slate-800 dark:text-slate-200 font-semibold text-xl lg:text-2xl">
+        <span>Hello</span>, Welcome to{" "}
         <span className=" font-bold text-blue-500">D-Buddy</span> !
       </p>
 
@@ -52,7 +52,7 @@ function Home() {
         ))}
       </div>
 
-      <p className=" p-10 text-xs text-red-600 animate-pulse">
+      <p className=" p-10 text-xs text-red-600 dark:text-red-500 animate-pulse">
         This is a demo version and still under development. A lot more features will be joining soon with
         the complete version. Stay tuned!
       </p>
