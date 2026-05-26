@@ -8,28 +8,33 @@ function SpiritualHome() {
 
   const cards = [
     {
-      icon: "",
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784609/yoga_speh3l.png",
       title: "Yoga",
       route: "",
     },
     {
-      icon: "",
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784609/chakras_bziblx.png",
       title: "Chakras",
       route: "",
     },
     {
-      icon: "",
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784609/durga_chalisa_wytc9n.png",
+      title: "Durga Chalisa",
+      route: "",
+    },
+    {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784610/hanuman_chalisa_mq2nos.png",
       title: "Hanuman Chalisa",
       route: "",
     },
     {
-      icon: "",
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784609/shiv_chalisa_wpglyp.png",
       title: "Shiv Chalisa",
       route: "",
     },
     {
-      icon: "",
-      title: "Durga Chalisa",
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1779784610/shiv_tandav_c5swl4.png",
+      title: "Shiv Taandav",
       route: "",
     },
   ];
