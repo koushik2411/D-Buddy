@@ -37,7 +37,7 @@ function KidsHome() {
     <section className=" w-full min-h-screen p-2 flex flex-col bg-slate-200 dark:bg-black/40 dark:text-slate-100">
       <SearchBar search={search} setSearch={setSearch}/>
 
-      <div className=" p-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-4">
+      <div className=" p-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-2">
         {searchResults.map((item, index) => {
           return <Card key={index} item={item} />;
         })}
