@@ -12,6 +12,14 @@ import BmiCalculator from './utility/BmiCalculator'
 import Counter from './kids/Counter'
 import SpiritualHome from './pages/SpiritualHome'
 import SavingsCalculator from './utility/SavingsCalculator'
+import Alphabets from './kids/Alphabets'
+import Animals from './kids/Animals'
+import Shapes from './kids/Shapes'
+import Fruits from './kids/Fruits'
+import Inventions from './students/Inventions'
+import IndianStates from './students/IndianStates'
+import Mensuration from './students/Mensuration'
+import CurrentAffairs from './students/CurrentAffairs'
 
 function App() {
   
@@ -29,10 +37,18 @@ function App() {
         <Route path='/calculator' element={<Calculator/>}/>
 
         // KIDS
+        <Route path='/alphabets' element={<Alphabets/>}/>
+        <Route path='/animals' element={<Animals/>}/>
         <Route path='/counter' element={<Counter/>}/>
         <Route path='/tables' element={<Tables/>}/>
+        <Route path='/fruits' element={<Fruits/>}/>
+        <Route path='/shapes' element={<Shapes/>}/>
 
         // STUDENTS
+        <Route path='/Indian states' element={<IndianStates/>}/>
+        <Route path='/current affairs' element={<CurrentAffairs/>}/>
+        <Route path='/inventions' element={<Inventions/>}/>
+        <Route path='/mensuration' element={<Mensuration/>}/>
         
         // UTILITY
         <Route path='/savings' element={<SavingsCalculator/>}/>

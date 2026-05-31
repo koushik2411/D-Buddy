@@ -8,6 +8,16 @@ function KidsHome() {
 
   const cards = [
     {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1780230866/Alphabets_lxpo2p.png",
+      title: "Alphabets",
+      route: "/alphabets",
+    },
+    {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1780230866/Animals_f7kvub.png",
+      title: "Animals",
+      route: "/animals",
+    },
+    {
       icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1776934768/Counter_xlnr7j.png",
       title: "Counter",
       route: "/counter",
@@ -16,6 +26,16 @@ function KidsHome() {
       icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1776862606/Tables_jv91h7.png",
       title: "Tables",
       route: "/tables",
+    },
+    {
+      icon: "",
+      title: "Fruits",
+      route: "/fruits",
+    },
+    {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1780230866/Shapes_y5umfr.png",
+      title: "Shapes",
+      route: "/shapes",
     },
   ];
 

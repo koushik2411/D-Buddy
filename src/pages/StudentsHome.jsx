@@ -8,9 +8,24 @@ function StudentsHome() {
 
   const cards = [
     {
-      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1776861029/Calculator_jgr2fx.png",
-      title: "Calculator",
-      route: "/calculator",
+      icon: "",
+      title: "Indian States",
+      route: "/Indian states",
+    },
+    {
+      icon: "",
+      title: "Current Affairs",
+      route: "/currentaffairs",
+    },
+    {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1780230943/Inventors_pljfcs.png",
+      title: "Inventions",
+      route: "/inventions",
+    },
+    {
+      icon: "https://res.cloudinary.com/dcfjexbss/image/upload/v1780230866/Shapes_y5umfr.png",
+      title: "Mensuration",
+      route: "/mensuration",
     },
   ];
 
